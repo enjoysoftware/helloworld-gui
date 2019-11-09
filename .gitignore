@@ -8,7 +8,5 @@ app/Makefile
 *.user
 app/helloworld-qt-gui
 .qmake.stash
-app/moc_mainwindow.cpp
-app/moc_predefs.h
-app/ui_mainwindow.h
-quick/*
+app/moc_*
+app/ui_*
