@@ -1,0 +1,14 @@
+*.pro.user
+app/translations/*.qm
+app/core
+app/*.o
+app/*.core
+Makefile
+app/Makefile
+*.user
+app/helloworld-qt-gui
+.qmake.stash
+app/moc_mainwindow.cpp
+app/moc_predefs.h
+app/ui_mainwindow.h
+quick/*
