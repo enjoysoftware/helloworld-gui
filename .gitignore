@@ -12,3 +12,4 @@ app/moc_mainwindow.cpp
 app/moc_predefs.h
 app/ui_mainwindow.h
 quick/*
+app/qrc_translations.cpp
