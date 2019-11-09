@@ -1,0 +1,9 @@
+language: cpp
+os: linux
+arch:
+ - amd64
+ - armhf
+ - i386
+script:
+ - cd app && lrelease app.pro
+ - cd .. && qmake && make -j2
