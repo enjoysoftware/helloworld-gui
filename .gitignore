@@ -5,7 +5,7 @@ app/*.o
 app/*.core
 Makefile
 app/Makefile
-*.user
+*.user*
 app/helloworld-qt-gui
 .qmake.stash
 app/ui_*
