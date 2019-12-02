@@ -43,6 +43,11 @@
     </message>
     <message>
         <location filename="../mainwindow.ui" line="35"/>
+        <source>Click to open the dialog.</source>
+        <translation>クリックしてダイアログを開きます。</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="38"/>
         <source>Click me!</source>
         <translation>クリックしてください！</translation>
     </message>
