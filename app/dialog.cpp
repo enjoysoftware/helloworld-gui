@@ -13,9 +13,10 @@ Dialog::~Dialog()
 }
 void Dialog::accept(){
     this->hide();
-    QMessageBox::information(parentWidget(),tr("accenpted"),tr("acccenpted."));
+    QMessageBox::information(parentWidget(),tr("accepted"),tr("accepted."));
 }
 void Dialog::reject(){
     this->hide();
+    qDebug() << parentWidget();
     QMessageBox::warning(parentWidget(),tr("rejected"),tr("rejected."));
 }
