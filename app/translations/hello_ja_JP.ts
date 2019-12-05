@@ -14,22 +14,30 @@
         <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:24pt;&quot;&gt;OKかキャンセルをクリックしてくだい。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:24pt;&quot;&gt;↓&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
-        <location filename="../dialog.cpp" line="16"/>
         <source>accenpted</source>
-        <translation>承諾された</translation>
+        <translation type="vanished">承諾された</translation>
     </message>
     <message>
-        <location filename="../dialog.cpp" line="16"/>
         <source>acccenpted.</source>
-        <translation>承諾された。</translation>
+        <translation type="vanished">承諾された。</translation>
     </message>
     <message>
-        <location filename="../dialog.cpp" line="20"/>
+        <location filename="../dialog.cpp" line="17"/>
+        <source>accepted</source>
+        <translation>受けいられれました</translation>
+    </message>
+    <message>
+        <location filename="../dialog.cpp" line="17"/>
+        <source>accepted.</source>
+        <translation>受け入れられました。</translation>
+    </message>
+    <message>
+        <location filename="../dialog.cpp" line="22"/>
         <source>rejected</source>
         <translation>拒否された</translation>
     </message>
     <message>
-        <location filename="../dialog.cpp" line="20"/>
+        <location filename="../dialog.cpp" line="22"/>
         <source>rejected.</source>
         <translation>拒否された。</translation>
     </message>
