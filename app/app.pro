@@ -25,16 +25,13 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += \
         main.cpp \
-        mainwindow.cpp \
-    dialog.cpp
+        mainwindow.cpp
 
 HEADERS += \
-        mainwindow.h \
-    dialog.h
+        mainwindow.h
 
 FORMS += \
-        mainwindow.ui \
-    dialog.ui
+        mainwindow.ui
 TRANSLATIONS += translations/hello_ja_JP.ts
 
 RESOURCES += \
