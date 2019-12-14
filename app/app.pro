@@ -36,6 +36,8 @@ TRANSLATIONS += translations/hello_ja_JP.ts
 
 RESOURCES += \
     translations.qrc
+    
+# Auto lrelease
 LUPDATE = $$[QT_INSTALL_BINS]/lupdate -locations absolute -no-obsolete
 LRELEASE = $$[QT_INSTALL_BINS]/lrelease
 translations.commands = $$LUPDATE app.pro -ts $$TRANSLATIONS
