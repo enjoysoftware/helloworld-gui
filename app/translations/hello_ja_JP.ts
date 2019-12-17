@@ -16,17 +16,21 @@
 </translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="66"/>
+        <location filename="../mainwindow.ui" line="73"/>
         <source>hello,world</source>
         <translation>世界よ、こんにちは</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="73"/>
+        <location filename="../mainwindow.ui" line="80"/>
+        <source>Greeting message</source>
+        <translation>あいさつメッセージ</translation>
+    </message>
+    <message>
+        <location filename="../mainwindow.ui" line="63"/>
         <source>Display</source>
         <translation>表示</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="80"/>
         <location filename="../mainwindow.cpp" line="18"/>
         <source>Greeting</source>
         <translation>あいさつ</translation>
@@ -39,7 +43,7 @@
     <message>
         <location filename="../mainwindow.cpp" line="9"/>
         <source>Version %1</source>
-        <translation type="unfinished">バージョン %1</translation>
+        <translation>バージョン %1</translation>
     </message>
 </context>
 </TS>
