@@ -48,11 +48,11 @@ isEmpty(vcproj):updateqm.variable_out = PRE_TARGETDEPS
 updateqm.commands = $$LRELEASE ${QMAKE_FILE_IN} -qm ${QMAKE_FILE_PATH}/${QMAKE_FILE_BASE}.qm
 updateqm.name = LRELEASE ${QMAKE_FILE_IN}
 updateqm.CONFIG += no_link target_predeps
-target.depends = updateqm
 QMAKE_EXTRA_COMPILERS += updateqm
 unix {
    isEmpty(PREFIX): PREFIX = /usr/local
    # install application
    target.path = $${PREFIX}/bin
    INSTALLS += target 
+   message("PREFIX: $${PREFIX}")
 }
