@@ -1,5 +1,5 @@
 name: helloworld-gui
-version: "1.1.1"
+version: "1.1"
 summary: HelloWorld GUI
 base: core18
 confinement: strict
@@ -9,7 +9,9 @@ description: |
 apps:
     helloworld-gui:
        command: desktop-launch $SNAP/usr/bin/helloworld-qt-gui
-       plugs: [x11, network, network-bind, home, locale-control, desktop, desktop-legacy]
+       environment:
+        QT_QPA_PLATFORMTHEME : gtk3
+       plugs: [x11, unity7, gsettings, pulseaudio, wayland, network, network-bind, home, locale-control, desktop, desktop-legacy]
 parts:
      helloworld-gui: 
         plugin: qmake
@@ -54,7 +56,20 @@ parts:
           - locales-all
           - xdg-user-dirs
           - fcitx-frontend-qt5
-    qt5-gtk-platform:
-     plugin: nil
-     stage-packages:
+     qt5-gtk-platform:
+      plugin: nil
+      stage-packages:
           - qt5-gtk-platformtheme
+plugs:
+  gtk-3-themes:
+    interface: content
+    target: $SNAP/share/themes
+    default-provider: gtk-common-themes:gtk-3-themes
+  icon-themes:
+    interface: content
+    target: $SNAP/share/icons
+    default-provider: gtk-common-themes:icon-themes
+  sound-themes:
+    interface: content
+    target: $SNAP/share/sounds
+    default-provider: gtk-common-themes:sounds-themes
