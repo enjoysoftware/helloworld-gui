@@ -11,3 +11,7 @@ app/helloworld-qt-gui
 app/ui_*
 app/moc_*
 app/qrc_translations.cpp
+snap/
+parts/
+stage/
+prime/
