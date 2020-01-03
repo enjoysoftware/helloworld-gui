@@ -1,8 +1,10 @@
 # helloworld-gui
 Cross-platform GUI version of Hello World 
-# Requirements
+## Status
+[![Snap Status](https://build.snapcraft.io/badge/enjoysoftware/helloworld-gui.svg)](https://build.snapcraft.io/user/enjoysoftware/helloworld-gui)
+## Requirements
 Qt5(`qtbase5-dev`)
-# How to build
+## How to build
 First, execute the following command:
 ```bash
 cd app && lrelease app.pro && qmake
