@@ -8,7 +8,7 @@ QT       += core gui
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
-TARGET = helloworld-qt-gui
+TARGET = helloworld-gui
 TEMPLATE = app
 
 # The following define makes your compiler emit warnings if you use
@@ -51,8 +51,13 @@ updateqm.CONFIG += no_link target_predeps
 QMAKE_EXTRA_COMPILERS += updateqm
 unix {
    isEmpty(PREFIX): PREFIX = /usr/local
+   DATA = $${PREFIX}/share
+   desktop.path = $${DATA}/applications
+   desktop.files = desktop/helloworld-gui.desktop
+   icons.path = $${DATA}/pixmaps
+   icons.files = desktop/helloworld-gui.png
    # install application
    target.path = $${PREFIX}/bin
-   INSTALLS += target 
+   INSTALLS += target icons desktop
    message("PREFIX: $${PREFIX}")
 }

@@ -8,7 +8,7 @@ description: |
     HelloWorld GUI is an application that displays the famous Hello World message in GUI. It can be used in various situations such as GUI testing.
 apps:
     helloworld-gui:
-       command: desktop-launch $SNAP/usr/bin/helloworld-qt-gui
+       command: desktop-launch $SNAP/usr/bin/helloworld-gui
        environment:
         QT_QPA_PLATFORMTHEME : gtk3
        plugs: [x11, unity7, gsettings, pulseaudio, wayland, network, network-bind, home, locale-control, desktop, desktop-legacy]
