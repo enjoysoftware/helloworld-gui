@@ -17,8 +17,12 @@
     </message>
     <message>
         <location filename="../mainwindow.ui" line="73"/>
+        <source>Hello,world!</source>
+        <translation>世界よ、こんにちは！</translation>
+    </message>
+    <message>
         <source>hello,world</source>
-        <translation>世界よ、こんにちは</translation>
+        <translation type="vanished">世界よ、こんにちは</translation>
     </message>
     <message>
         <location filename="../mainwindow.ui" line="80"/>
