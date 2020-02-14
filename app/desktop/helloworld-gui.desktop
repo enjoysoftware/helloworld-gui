@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=HelloWorld GUI
+Comment=GUI version of helloworld
+Comment[ja]=GUI版のhelloworld
+Exec=helloworld-gui
+Icon=helloworld-gui
+StartupNotify=true
+Categories=Development;Qt;
+Type=Application
