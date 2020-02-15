@@ -25,6 +25,7 @@ parts:
           qmake PREFIX=$SNAPCRAFT_PART_INSTALL/usr
           make 
           make install
+          sed -i 's|Icon=helloworld-gui|Icon=/usr/share/pixmaps/helloworld-gui\.png|' $SNAPCRAFT_PART_INSTALL/usr/share/applications/helloworld-gui.desktop
           echo Done!
         build-packages:
           - qt5-default
