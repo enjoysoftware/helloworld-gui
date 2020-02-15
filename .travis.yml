@@ -1,9 +1,8 @@
 language: cpp
 os: linux
+dist: bionic
 arch:
  - amd64
- - armhf
- - i386
 script:
- - cd app && lrelease app.pro
- - cd .. && qmake && make -j2
+ - qmake 
+ - make
