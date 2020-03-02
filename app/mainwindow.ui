@@ -21,32 +21,6 @@
   </property>
   <widget class="QWidget" name="centralWidget">
    <layout class="QGridLayout" name="gridLayout">
-    <item row="2" column="0" colspan="2">
-     <spacer name="verticalSpacer">
-      <property name="orientation">
-       <enum>Qt::Vertical</enum>
-      </property>
-      <property name="sizeHint" stdset="0">
-       <size>
-        <width>20</width>
-        <height>40</height>
-       </size>
-      </property>
-     </spacer>
-    </item>
-    <item row="0" column="1">
-     <spacer name="horizontalSpacer_2">
-      <property name="orientation">
-       <enum>Qt::Horizontal</enum>
-      </property>
-      <property name="sizeHint" stdset="0">
-       <size>
-        <width>40</width>
-        <height>20</height>
-       </size>
-      </property>
-     </spacer>
-    </item>
     <item row="0" column="0">
      <widget class="QLabel" name="label">
       <property name="text">
@@ -55,25 +29,36 @@
       </property>
      </widget>
     </item>
-    <item row="1" column="0" colspan="2">
+    <item row="3" column="2">
+     <widget class="QPushButton" name="aboutButton">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="text">
+       <string>&amp;About</string>
+      </property>
+      <property name="checkable">
+       <bool>false</bool>
+      </property>
+      <property name="checked">
+       <bool>false</bool>
+      </property>
+      <property name="autoDefault">
+       <bool>false</bool>
+      </property>
+      <property name="default">
+       <bool>false</bool>
+      </property>
+      <property name="flat">
+       <bool>false</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0" colspan="3">
      <layout class="QFormLayout" name="formLayout">
-      <item row="2" column="1">
-       <widget class="QPushButton" name="pushButton">
-        <property name="text">
-         <string>Display</string>
-        </property>
-       </widget>
-      </item>
-      <item row="2" column="0">
-       <widget class="QLineEdit" name="lineEdit">
-        <property name="whatsThis">
-         <string/>
-        </property>
-        <property name="text">
-         <string>Hello,world!</string>
-        </property>
-       </widget>
-      </item>
       <item row="1" column="0">
        <widget class="QLabel" name="greeting">
         <property name="text">
@@ -94,36 +79,66 @@
         </property>
        </spacer>
       </item>
+      <item row="2" column="0">
+       <widget class="QLineEdit" name="lineEdit">
+        <property name="whatsThis">
+         <string/>
+        </property>
+        <property name="text">
+         <string>Hello,world!</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QPushButton" name="pushButton">
+        <property name="text">
+         <string>&amp;Display</string>
+        </property>
+       </widget>
+      </item>
      </layout>
     </item>
-    <item row="3" column="0" colspan="2">
-     <widget class="QLabel" name="version">
-      <property name="text">
-       <string>Version</string>
+    <item row="0" column="1" colspan="2">
+     <spacer name="horizontalSpacer_2">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
       </property>
-     </widget>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>40</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item row="2" column="0" colspan="3">
+     <spacer name="verticalSpacer">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>20</width>
+        <height>40</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item row="3" column="0">
+     <spacer name="horizontalSpacer_3">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>40</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
     </item>
    </layout>
   </widget>
-  <widget class="QMenuBar" name="menuBar">
-   <property name="geometry">
-    <rect>
-     <x>0</x>
-     <y>0</y>
-     <width>419</width>
-     <height>28</height>
-    </rect>
-   </property>
-  </widget>
-  <widget class="QToolBar" name="mainToolBar">
-   <attribute name="toolBarArea">
-    <enum>TopToolBarArea</enum>
-   </attribute>
-   <attribute name="toolBarBreak">
-    <bool>false</bool>
-   </attribute>
-  </widget>
-  <widget class="QStatusBar" name="statusBar"/>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
  <resources/>
@@ -135,8 +150,8 @@
    <slot>clicked()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>303</x>
-     <y>125</y>
+     <x>408</x>
+     <y>108</y>
     </hint>
     <hint type="destinationlabel">
      <x>308</x>
@@ -144,8 +159,25 @@
     </hint>
    </hints>
   </connection>
+  <connection>
+   <sender>aboutButton</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>showAbout()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>369</x>
+     <y>263</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>296</x>
+     <y>233</y>
+    </hint>
+   </hints>
+  </connection>
  </connections>
  <slots>
   <slot>clicked()</slot>
+  <slot>showAbout()</slot>
  </slots>
 </ui>

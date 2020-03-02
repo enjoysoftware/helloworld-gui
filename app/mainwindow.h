@@ -23,6 +23,7 @@ protected:
     void closeEvent(QCloseEvent *);
 private slots:
     void clicked();
+    void showAbout();
 };
 
 #endif // MAINWINDOW_H

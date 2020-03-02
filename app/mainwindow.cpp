@@ -1,12 +1,11 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
-#define VERSION QString("1.2")
+#define VERSION QString("1.3")
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
-    ui->version->setText(tr("Version %1").arg(VERSION));
 }
 
 MainWindow::~MainWindow()
@@ -24,4 +23,8 @@ void MainWindow::closeEvent(QCloseEvent *events){
 //        qWarning() <<result<<":ignored";
 //    }
     qDebug() << "Exit.";
+}
+void MainWindow::showAbout(){
+    QMessageBox::about(this,this->windowTitle(),tr("<h2>About</h2>Qt-based, this application displays a friendly, customizable greeting in GUI.<br><i>Version %1</i>"
+                                                   "<br>Repository:<a href=\"https://github.com/enjoysoftware/helloworld-gui\">https://github.com/enjoysoftware/helloworld-gui</a>").arg(VERSION));
 }
