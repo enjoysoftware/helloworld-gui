@@ -1,10 +1,22 @@
-# helloworld-gui
-Cross-platform GUI version of Hello World 
-## Status
+# HelloWorld GUI
+![Fork-Free](https://img.shields.io/badge/Fork-Free-brightgreen)
+![Redistribution-Free](https://img.shields.io/badge/Redistribution-Free-brightgreen)
+
+Cross-platform GUI version of Hello World .
+## Snapcraft Status
 [![Snap Status](https://build.snapcraft.io/badge/enjoysoftware/helloworld-gui.svg)](https://build.snapcraft.io/user/enjoysoftware/helloworld-gui)
-## Requirements
-Qt5(`qtbase5-dev`)
+## How to install
+Please install using Snapcraft.
+
+[![Get it from the Snap Store](https://snapcraft.io/static/images/badges/en/snap-store-black.svg)](https://snapcraft.io/helloworld-gui)
+```
+sudo snap install helloworld-gui
+```
 ## How to build
+### Requirements
+
+Qt5(`qtbase5-dev`)
+
 First, execute the following command:
 ```bash
 cd app && lrelease app.pro && qmake
