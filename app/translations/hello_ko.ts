@@ -54,7 +54,7 @@
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="28"/>
-        <source>&lt;h2&gt;About&lt;/h2&gt;Qt-based, this application displays a friendly, customizable greeting in GUI.&lt;br&gt;&lt;i&gt;Version %1&lt;/i&gt;&lt;br&gt;Repository:&lt;a href=&quot;https://github.com/enjoysoftware/helloworld-gui&quot;&gt;https://github.com/enjoysoftware/helloworld-gui&lt;/a&gt;</source>
+        <source>&lt;h2&gt;About&lt;/h2&gt;Qt-based, this application displays a friendly, customizable greeting in GUI.&lt;br&gt;&lt;i&gt;Version %1&lt;/i&gt;&lt;br&gt;Repository:&lt;a href=&quot;https://github.com/enjoysoftware/helloworld-gui&quot;&gt;https://github.com/enjoysoftware/helloworld-gui&lt;/a&gt;&lt;br&gt;(C) 2020 EnjoySoftware</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
