@@ -6,11 +6,14 @@ MainWindow::MainWindow(QWidget *parent) :
     ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+    settings = new QSettings("EnjoySoftware","HelloWorld GUI");
+    loadSettings();
 }
 
 MainWindow::~MainWindow()
 {
     delete ui;
+    delete settings;
 }
 void MainWindow::clicked(){
     QString greeting_text=ui->lineEdit->text();
@@ -22,10 +25,22 @@ void MainWindow::closeEvent(QCloseEvent *events){
 //        events->ignore();
 //        qWarning() <<result<<":ignored";
 //    }
+    settings->setValue("window_x",x());
+    settings->setValue("window_y",y());
+    settings->setValue("window_width",width());
+    settings->setValue("window_height",height());
     qDebug() << "Exit.";
 }
 void MainWindow::showAbout(){
     QMessageBox::about(this,this->windowTitle(),tr("<h2>About</h2>Qt-based, this application displays a friendly, customizable greeting in GUI.<br><i>Version %1</i>"
                                                    "<br>Repository:<a href=\"https://github.com/enjoysoftware/helloworld-gui\">https://github.com/enjoysoftware/helloworld-gui</a>"
                                                    "<br>(C) 2020 EnjoySoftware").arg(VERSION));
+}
+void MainWindow::loadSettings(){
+    QRect def = geometry();
+    int x = settings->value("window_x",def.x()).toInt();
+    int y = settings->value("window_y",def.y()).toInt();
+    int w = settings->value("window_width",def.width()).toInt();
+    int h = settings->value("window_height",def.height()).toInt();
+    setGeometry(x,y,w,h);
 }

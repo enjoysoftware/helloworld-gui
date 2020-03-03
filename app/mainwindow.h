@@ -6,6 +6,7 @@
 #include <QFile>
 #include <QMessageBox>
 #include <QDebug>
+#include <QSettings>
 #include <QCloseEvent>
 namespace Ui {
 class MainWindow;
@@ -17,8 +18,10 @@ class MainWindow : public QMainWindow
 public:
     explicit MainWindow(QWidget *parent = 0);
     ~MainWindow();
+    QSettings *settings;
 private:
     Ui::MainWindow *ui;
+    void loadSettings();
 protected:
     void closeEvent(QCloseEvent *);
 private slots:
