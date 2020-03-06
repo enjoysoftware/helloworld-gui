@@ -9,24 +9,24 @@
         <translation>HelloWorld GUI</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="27"/>
+        <location filename="../mainwindow.ui" line="106"/>
         <source>Print a friendly, customizable greeting.
 </source>
         <translation>フレンドリーでカスタマイズ可能なあいさつを表示します。
 </translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="41"/>
+        <location filename="../mainwindow.ui" line="120"/>
         <source>&amp;About</source>
         <translation>これについて(&amp;A)</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="88"/>
+        <location filename="../mainwindow.ui" line="84"/>
         <source>Hello,world!</source>
         <translation>世界よ、こんにちは！</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="95"/>
+        <location filename="../mainwindow.ui" line="97"/>
         <source>&amp;Display</source>
         <translation>表示(&amp;D)</translation>
     </message>
@@ -35,7 +35,7 @@
         <translation type="vanished">世界よ、こんにちは</translation>
     </message>
     <message>
-        <location filename="../mainwindow.ui" line="65"/>
+        <location filename="../mainwindow.ui" line="55"/>
         <source>Greeting message</source>
         <translation>あいさつメッセージ</translation>
     </message>
@@ -44,12 +44,12 @@
         <translation type="vanished">表示</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="17"/>
+        <location filename="../mainwindow.cpp" line="21"/>
         <source>Greeting</source>
         <translation>あいさつ</translation>
     </message>
     <message>
-        <location filename="../mainwindow.cpp" line="28"/>
+        <location filename="../mainwindow.cpp" line="36"/>
         <source>&lt;h2&gt;About&lt;/h2&gt;Qt-based, this application displays a friendly, customizable greeting in GUI.&lt;br&gt;&lt;i&gt;Version %1&lt;/i&gt;&lt;br&gt;Repository:&lt;a href=&quot;https://github.com/enjoysoftware/helloworld-gui&quot;&gt;https://github.com/enjoysoftware/helloworld-gui&lt;/a&gt;&lt;br&gt;(C) 2020 EnjoySoftware</source>
         <translation>&lt;h2&gt;このソフトウェアについて&lt;/h2&gt;Qtベースのこのアプリケーションは、GUIでフレンドリーでカスタマイズ可能なあいさつを表示します。&lt;br&gt;&lt;i&gt;バージョン %1&lt;/i&gt;&lt;br&gt;リポジトリ：&lt;a href=&quot;https://github.com/enjoysoftware/helloworld-gui&quot;&gt;https://github.com/enjoysoftware/helloworld-gui&lt;/a&gt;&lt;br&gt;(C) 2020 EnjoySoftware</translation>
     </message>
