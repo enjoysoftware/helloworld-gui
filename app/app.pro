@@ -33,7 +33,8 @@ HEADERS += \
 FORMS += \
         mainwindow.ui
 TRANSLATIONS += translations/hello_ja_JP.ts \
-                translations/hello_ko.ts
+                translations/hello_ko.ts \
+                translations/hello_fr.ts
 
 RESOURCES += \
     translations.qrc
