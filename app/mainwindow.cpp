@@ -7,6 +7,7 @@ MainWindow::MainWindow(QWidget *parent) :
     ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+    is_checked = false;
     settings = new QSettings("EnjoySoftware","HelloWorld GUI");
     loadSettings();
 }
@@ -18,7 +19,15 @@ MainWindow::~MainWindow()
 }
 void MainWindow::clicked(){
     QString greeting_text=ui->lineEdit->text();
-    QMessageBox::information(this,tr("Greeting"),greeting_text);
+    if(is_checked)
+    {
+        if(ui->msgboxBtn->isChecked())
+        {QMessageBox::information(this,tr("Greeting"),greeting_text);}else{
+            ui->greetingLabel->setText(tr("Greeting") + ":" + greeting_text);
+        }
+    }else{
+        QMessageBox::information(this,tr("No where to display greeting message specified"),tr("No where to display greeting message specified.Please specify where to display greeting message."));
+    }
 }
 void MainWindow::closeEvent(QCloseEvent *events){
 //    int result=QMessageBox::question(this,tr("Do you want to exit?"),tr("This program will closed.\nAre you OK?"));
@@ -46,4 +55,7 @@ void MainWindow::loadSettings(){
     int w = settings->value("window_width",def.width()).toInt();
     int h = settings->value("window_height",def.height()).toInt();
     setGeometry(x,y,w,h);
+}
+void MainWindow::checked(){
+    is_checked = true;
 }

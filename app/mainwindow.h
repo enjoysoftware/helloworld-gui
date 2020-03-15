@@ -22,10 +22,12 @@ public:
 private:
     Ui::MainWindow *ui;
     void loadSettings();
+    bool is_checked;
 protected:
     void closeEvent(QCloseEvent *);
 private slots:
     void clicked();
+    void checked();
     void showAbout();
 };
 
