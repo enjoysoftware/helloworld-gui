@@ -35,7 +35,7 @@ void MainWindow::closeEvent(QCloseEvent *events){
 void MainWindow::showAbout(){
     QMessageBox::about(this,this->windowTitle(),tr("<h2>About</h2>Qt-based, this application displays a friendly, customizable greeting in GUI.<br><i>Version %1</i>"
                                                    "<br>Repository:<a href=\"https://github.com/enjoysoftware/helloworld-gui\">https://github.com/enjoysoftware/helloworld-gui</a>"
-                                                   "<br>(C) 2020 EnjoySoftware").arg(VERSION));
+                                                   "<br>(C) 2020 EnjoySoftware<br>License:<b>GPL-3</b>").arg(VERSION));
 }
 void MainWindow::loadSettings(){
     QRect def = geometry();
