@@ -33,7 +33,7 @@
     <message>
         <location filename="../mainwindow.ui" line="120"/>
         <source>&amp;About</source>
-        <translation>&amp;Sur</translation>
+        <translation>&amp;About</translation>
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="21"/>
@@ -42,8 +42,12 @@
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="36"/>
+        <source>&lt;h2&gt;About&lt;/h2&gt;Qt-based, this application displays a friendly, customizable greeting in GUI.&lt;br&gt;&lt;i&gt;Version %1&lt;/i&gt;&lt;br&gt;Repository:&lt;a href=&quot;https://github.com/enjoysoftware/helloworld-gui&quot;&gt;https://github.com/enjoysoftware/helloworld-gui&lt;/a&gt;&lt;br&gt;(C) 2020 EnjoySoftware&lt;br&gt;License:&lt;b&gt;GPL-3&lt;/b&gt;</source>
+        <translation>&lt;h2&gt;About&lt;/h2&gt;basée sur Qt, cette application affiche un message d&apos;accueil convivial et personnalisable dans l&apos;interface graphique.&lt;br&gt;&lt;i&gt;Version %1&lt;/i&gt;&lt;br&gt;Référentiel:&lt;a href=&quot;https://github.com/enjoysoftware/helloworld-gui&quot;&gt;https://github.com/enjoysoftware/helloworld-gui&lt;/a&gt;&lt;br&gt;(C) 2020 EnjoySoftware&lt;br&gt;License:&lt;b&gt;GPL-3&lt;/b&gt;</translation>
+    </message>
+    <message>
         <source>&lt;h2&gt;About&lt;/h2&gt;Qt-based, this application displays a friendly, customizable greeting in GUI.&lt;br&gt;&lt;i&gt;Version %1&lt;/i&gt;&lt;br&gt;Repository:&lt;a href=&quot;https://github.com/enjoysoftware/helloworld-gui&quot;&gt;https://github.com/enjoysoftware/helloworld-gui&lt;/a&gt;&lt;br&gt;(C) 2020 EnjoySoftware</source>
-        <translation>&lt;h2&gt; À propos &lt;/h2&gt; basée sur Qt, cette application affiche un message d&apos;accueil convivial et personnalisable dans l&apos;interface graphique. &lt;br&gt; &lt;i&gt; Version %1 &lt;/i&gt; &lt;br&gt; Référentiel: &lt;a href=&quot;https://github.com/enjoysoftware/helloworld-gui&quot;&gt;https://github.com/enjoysoftware/helloworld-gui &lt;/a&gt; &lt;br&gt; (C) 2020 EnjoySoftware</translation>
+        <translation type="vanished">&lt;h2&gt; À propos &lt;/h2&gt; basée sur Qt, cette application affiche un message d&apos;accueil convivial et personnalisable dans l&apos;interface graphique. &lt;br&gt; &lt;i&gt; Version %1 &lt;/i&gt; &lt;br&gt; Référentiel: &lt;a href=&quot;https://github.com/enjoysoftware/helloworld-gui&quot;&gt;https://github.com/enjoysoftware/helloworld-gui &lt;/a&gt; &lt;br&gt; (C) 2020 EnjoySoftware</translation>
     </message>
 </context>
 </TS>
