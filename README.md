@@ -27,3 +27,5 @@ make -j{n}
 or
 make
 ```
+## Contribute to translation
+HelloWorld GUI can now use transifex to contribute to translation. If you want to contribute to the translation, please visit here: https://www.transifex.com/enjoysoftware-1/helloworld-gui-project/
