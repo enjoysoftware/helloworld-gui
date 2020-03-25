@@ -1,6 +1,7 @@
 # HelloWorld GUI
 ![Fork-Free](https://img.shields.io/badge/Fork-Free-brightgreen)
 ![Redistribution-Free](https://img.shields.io/badge/Redistribution-Free-brightgreen)
+[![Build Status](https://travis-ci.com/enjoysoftware/helloworld-gui.svg?branch=master)](https://travis-ci.com/enjoysoftware/helloworld-gui)
 
 Cross-platform GUI version of Hello World .
 ## Snapcraft Status
