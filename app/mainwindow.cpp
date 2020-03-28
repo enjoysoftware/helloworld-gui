@@ -1,7 +1,7 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 #include <QDesktopWidget>
-#define VERSION QString("1.4")
+#define VERSION QString("1.4.1")
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::MainWindow)
@@ -43,8 +43,8 @@ void MainWindow::closeEvent(QCloseEvent *events){
 }
 void MainWindow::showAbout(){
     QMessageBox::about(this,this->windowTitle(),tr("<h2>About</h2>Qt-based, this application displays a friendly, customizable greeting in GUI.<br><i>Version %1</i>"
-                                                   "<br>Repository:<a href=\"https://github.com/enjoysoftware/helloworld-gui\">https://github.com/enjoysoftware/helloworld-gui</a>"
-                                                   "<br>(C) 2020 EnjoySoftware<br>License:<b>GPL-3</b>").arg(VERSION));
+                                                   "<br>Repository:<a href=\"%2\">%2</a>"
+                                                   "<br>%3<br>License:<b>%4</b>").arg(VERSION).arg(QString(SOURCE)).arg(COPYRIGHT).arg(QString(LICENSE)));
 }
 void MainWindow::loadSettings(){
     QRect def = geometry();

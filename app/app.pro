@@ -5,7 +5,7 @@
 #-------------------------------------------------
 
 QT       += core gui
-
+include(../pri/env.pri)
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
 TARGET = helloworld-gui
@@ -38,7 +38,8 @@ TRANSLATIONS += translations/hello_ja_JP.ts \
 
 RESOURCES += \
     translations.qrc
-    
+DEFINES += LICENSE='"\\\"$${LICENSE}\\\""' AUTHOR='"\\\"$${AUTHOR}\\\""'
+DEFINES += COPYRIGHT='"\\\"$${COPYRIGHT}\\\""' SOURCE='"\\\"$${SOURCE}\\\""'
 # Auto lrelease
 LUPDATE = $$[QT_INSTALL_BINS]/lupdate -locations absolute -no-obsolete
 LRELEASE = $$[QT_INSTALL_BINS]/lrelease

@@ -76,8 +76,12 @@
     </message>
     <message>
         <location filename="../mainwindow.cpp" line="45"/>
+        <source>&lt;h2&gt;About&lt;/h2&gt;Qt-based, this application displays a friendly, customizable greeting in GUI.&lt;br&gt;&lt;i&gt;Version %1&lt;/i&gt;&lt;br&gt;Repository:&lt;a href=&quot;%2&quot;&gt;%2&lt;/a&gt;&lt;br&gt;%3&lt;br&gt;License:&lt;b&gt;%4&lt;/b&gt;</source>
+        <translation>&lt;h2&gt;このソフトウェアについて&lt;/h2&gt;Qtベースのこのアプリケーションは、GUIの中にフレンドリーでカスタマイズ可能なあいさつを表示します。&lt;br&gt;&lt;i&gt;バージョン %1&lt;/i&gt;&lt;br&gt;リポジトリ:&lt;a href=&quot;%2&quot;&gt;%2&lt;/a&gt;&lt;br&gt;%3&lt;br&gt;ライセンス:&lt;b&gt;%4&lt;/b&gt;</translation>
+    </message>
+    <message>
         <source>&lt;h2&gt;About&lt;/h2&gt;Qt-based, this application displays a friendly, customizable greeting in GUI.&lt;br&gt;&lt;i&gt;Version %1&lt;/i&gt;&lt;br&gt;Repository:&lt;a href=&quot;https://github.com/enjoysoftware/helloworld-gui&quot;&gt;https://github.com/enjoysoftware/helloworld-gui&lt;/a&gt;&lt;br&gt;(C) 2020 EnjoySoftware&lt;br&gt;License:&lt;b&gt;GPL-3&lt;/b&gt;</source>
-        <translation>&lt;h2&gt;このソフトウェアについて&lt;/h2&gt;Qtベースのこのアプリケーションは、GUIでフレンドリーでカスタマイズ可能なあいさつを表示します。&lt;br&gt;&lt;i&gt;バージョン %1&lt;/i&gt;&lt;br&gt;リポジトリ：&lt;a href=&quot;https://github.com/enjoysoftware/helloworld-gui&quot;&gt;https://github.com/enjoysoftware/helloworld-gui&lt;/a&gt;&lt;br&gt;(C) 2020 EnjoySoftware&lt;br&gt;ライセンス:&lt;b&gt;GPL-3&lt;/b&gt;</translation>
+        <translation type="vanished">&lt;h2&gt;このソフトウェアについて&lt;/h2&gt;Qtベースのこのアプリケーションは、GUIでフレンドリーでカスタマイズ可能なあいさつを表示します。&lt;br&gt;&lt;i&gt;バージョン %1&lt;/i&gt;&lt;br&gt;リポジトリ：&lt;a href=&quot;https://github.com/enjoysoftware/helloworld-gui&quot;&gt;https://github.com/enjoysoftware/helloworld-gui&lt;/a&gt;&lt;br&gt;(C) 2020 EnjoySoftware&lt;br&gt;ライセンス:&lt;b&gt;GPL-3&lt;/b&gt;</translation>
     </message>
     <message>
         <source>&lt;h2&gt;About&lt;/h2&gt;Qt-based, this application displays a friendly, customizable greeting in GUI.&lt;br&gt;&lt;i&gt;Version %1&lt;/i&gt;&lt;br&gt;Repository:&lt;a href=&quot;https://github.com/enjoysoftware/helloworld-gui&quot;&gt;https://github.com/enjoysoftware/helloworld-gui&lt;/a&gt;&lt;br&gt;(C) 2020 EnjoySoftware</source>
