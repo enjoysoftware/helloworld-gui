@@ -1,5 +1,5 @@
 name: helloworld-gui
-version: "1.4"
+version: "1.4.1"
 summary: GUI version of HelloWorld - Displays the famous "Hello World" message
 title: HelloWorld GUI
 license: GPL-3.0
