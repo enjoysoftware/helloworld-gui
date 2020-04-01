@@ -10,7 +10,7 @@
     <x>0</x>
     <y>0</y>
     <width>419</width>
-    <height>283</height>
+    <height>285</height>
    </rect>
   </property>
   <property name="acceptDrops">
@@ -18,6 +18,10 @@
   </property>
   <property name="windowTitle">
    <string>HelloWorld GUI</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="icons.qrc">
+    <normaloff>:/icons/desktop/helloworld-gui.png</normaloff>:/icons/desktop/helloworld-gui.png</iconset>
   </property>
   <widget class="QWidget" name="centralWidget">
    <layout class="QGridLayout" name="gridLayout">
@@ -170,7 +174,9 @@
   </widget>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
- <resources/>
+ <resources>
+  <include location="icons.qrc"/>
+ </resources>
  <connections>
   <connection>
    <sender>pushButton</sender>

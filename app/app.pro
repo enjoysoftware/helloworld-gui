@@ -37,6 +37,7 @@ TRANSLATIONS += translations/hello_ja_JP.ts \
                 translations/hello_fr.ts
 
 RESOURCES += \
+    icons.qrc \
     translations.qrc
 DEFINES += LICENSE='"\\\"$${LICENSE}\\\""' AUTHOR='"\\\"$${AUTHOR}\\\""'
 DEFINES += COPYRIGHT='"\\\"$${COPYRIGHT}\\\""' SOURCE='"\\\"$${SOURCE}\\\""'

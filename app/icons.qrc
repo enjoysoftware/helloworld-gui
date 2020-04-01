@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/icons">
+        <file>desktop/helloworld-gui.png</file>
+    </qresource>
+</RCC>
