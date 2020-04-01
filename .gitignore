@@ -10,7 +10,7 @@ app/helloworld-gui
 .qmake.stash
 app/ui_*
 app/moc_*
-app/qrc_translations.cpp
+app/qrc_*.cpp
 snap/
 parts/
 stage/
