@@ -39,7 +39,7 @@ void MainWindow::closeEvent(QCloseEvent *events){
     settings->setValue("window_y",y());
     settings->setValue("window_width",width());
     settings->setValue("window_height",height());
-    qDebug() << "Exit.";
+    qDebug() << "Quit.";
 }
 void MainWindow::showAbout(){
     QMessageBox::about(this,this->windowTitle(),tr("<h2>About</h2>Qt-based, this application displays a friendly, customizable greeting in GUI.<br><i>Version %1</i>"
