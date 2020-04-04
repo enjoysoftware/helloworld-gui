@@ -35,6 +35,7 @@ void MainWindow::closeEvent(QCloseEvent *events){
 //        events->ignore();
 //        qWarning() <<result<<":ignored";
 //    }
+    Q_UNUSED(events);
     settings->setValue("window_x",x());
     settings->setValue("window_y",y());
     settings->setValue("window_width",width());
