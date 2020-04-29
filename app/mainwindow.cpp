@@ -3,6 +3,7 @@
 #include <QDesktopWidget>
 #include <QAction>
 #include <QMenu>
+#define VERSION QString("1.5")
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::MainWindow)
