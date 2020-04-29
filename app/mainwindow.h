@@ -6,6 +6,7 @@
 #include <QFile>
 #include <QMessageBox>
 #include <QDebug>
+#include <QSystemTrayIcon>
 #include <QSettings>
 #include <QCloseEvent>
 namespace Ui {
@@ -22,6 +23,8 @@ public:
 private:
     Ui::MainWindow *ui;
     void loadSettings();
+    void createTrayIcon();
+    QSystemTrayIcon trayicon;
     bool is_checked;
 protected:
     void closeEvent(QCloseEvent *);

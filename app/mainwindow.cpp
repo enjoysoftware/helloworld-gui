@@ -1,7 +1,8 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 #include <QDesktopWidget>
-#define VERSION QString("1.4.1")
+#include <QAction>
+#include <QMenu>
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::MainWindow)
@@ -10,6 +11,10 @@ MainWindow::MainWindow(QWidget *parent) :
     is_checked = false;
     settings = new QSettings("EnjoySoftware","HelloWorld GUI");
     loadSettings();
+    createTrayIcon();
+    connect(ui->desknotifyBtn,&QRadioButton::clicked,this,&MainWindow::checked);
+    connect(ui->thiswindowBtn,&QRadioButton::clicked,this,&MainWindow::checked);
+    connect(ui->msgboxBtn,&QRadioButton::clicked,this,&MainWindow::checked);
 }
 
 MainWindow::~MainWindow()
@@ -17,13 +22,27 @@ MainWindow::~MainWindow()
     delete ui;
     delete settings;
 }
+void MainWindow::createTrayIcon(){
+    QAction action_Quit(tr("&Quit"));
+    action_Quit.setIcon(QIcon::fromTheme("application-exit"));
+    QMenu traymenu(this);
+    traymenu.addAction(&action_Quit);
+    trayicon.setContextMenu(&traymenu);
+    trayicon.setIcon(QIcon(":/icons/desktop/helloworld-gui.png"));
+    connect(&action_Quit,&QAction::triggered,this,&MainWindow::close);
+    trayicon.show();
+}
 void MainWindow::clicked(){
     QString greeting_text=ui->lineEdit->text();
     if(is_checked)
     {
         if(ui->msgboxBtn->isChecked())
-        {QMessageBox::information(this,tr("Greeting"),greeting_text);}else{
+        {QMessageBox::information(this,tr("Greeting"),greeting_text);
+        }
+        else if(ui->thiswindowBtn->isChecked()){
             ui->greetingLabel->setText(tr("Greeting") + ":" + greeting_text);
+        }else{
+            trayicon.showMessage(tr("Greeting"),greeting_text,QIcon(":/icons/desktop/helloworld-gui.png"),5000);
         }
     }else{
         QMessageBox::information(this,tr("No where to display greeting message specified"),tr("No where to display greeting message specified.Please specify where to display greeting message."));

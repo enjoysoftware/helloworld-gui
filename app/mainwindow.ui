@@ -9,8 +9,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>419</width>
-    <height>285</height>
+    <width>481</width>
+    <height>343</height>
    </rect>
   </property>
   <property name="acceptDrops">
@@ -50,6 +50,13 @@
         <widget class="QRadioButton" name="thiswindowBtn">
          <property name="text">
           <string>In this window</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QRadioButton" name="desknotifyBtn">
+         <property name="text">
+          <string>Desktop notifications</string>
          </property>
         </widget>
        </item>
@@ -201,44 +208,12 @@
    <slot>showAbout()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>369</x>
-     <y>263</y>
+     <x>378</x>
+     <y>333</y>
     </hint>
     <hint type="destinationlabel">
      <x>296</x>
      <y>233</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>msgboxBtn</sender>
-   <signal>clicked()</signal>
-   <receiver>MainWindow</receiver>
-   <slot>checked()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>107</x>
-     <y>191</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>213</x>
-     <y>133</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>thiswindowBtn</sender>
-   <signal>clicked()</signal>
-   <receiver>MainWindow</receiver>
-   <slot>checked()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>120</x>
-     <y>210</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>290</x>
-     <y>138</y>
     </hint>
    </hints>
   </connection>
