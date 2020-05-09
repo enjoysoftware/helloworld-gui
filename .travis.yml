@@ -2,7 +2,16 @@ language: cpp
 os: linux
 dist: bionic
 arch:
- - amd64
+- amd64
 script:
- - qmake 
- - make
+- qmake
+- make
+deploy:
+  provider: releases
+  api_key:
+    secure: CyJLwzdNj+tj1dvOWVHn0xm3Yk/ogGly5s8GmQFnH5XXTDx4794g2JecNj3aytN4uzv6dqGlvoUZC1+MYrqzC4NTzbAHfRinMAi4Hmz7X/PTruXEZhz6sMWc4fbYDzrFsYQvxiv5296No2GS/CYM9m8JAlZQIxqaEOAkbQUubskYU+H7gVJGnBpXckaywmhheQfswWTkunBUm1kW5ErbyvGamZmfwM9LOQJt3NtlIgTy/kNReZySRheL4JIl70ZVQv3/WPb7DM+yynOd6pQowfppIHryFLjGXkZpXGgSvTSRhXCH8fy4o4Dn+AUYYVjv7Yy1GPHDG51CmF6kl0rdBg9DZK7BA/D0gLYrGj9NdOTFtoz2P9nEi8NYrr5T6hciH0W4DwcLpbg5Q0vGE/SiAcnXiM2JBJl2DKKs9ltCXZIitKr861CZ35FDBO1t+/y9K8/cNeYhvYrGwnZBz3Ch2cYo/KivTXBtWwbrkHAGJ8GKp9oUbNCJzIJBTBPukBdt4/RfigzFmiQf1iZPmY5zKblMgT5HvXXF5nA6rfC4TMgQ0aOBgx/8nbvw51RI65+PG4aZkqriZa/Jfg+Hqwn2+FcFas8woSSPzqBR85qYAyW46yHInBAXT/mIFNa71lizCxAib72nZTYJucMlNRmPvbBg3cWPz7utREBFe5lgjWo=
+  file: helloworld-gui.pro
+  on:
+    repo: enjoysoftware/helloworld-gui
+    tags: true
+  skip_cleanup: 'true'
