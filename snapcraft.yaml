@@ -14,7 +14,7 @@ apps:
        desktop: usr/share/applications/helloworld-gui.desktop
        environment:
         QT_QPA_PLATFORMTHEME : gtk3
-       plugs: [x11, unity7, gsettings, pulseaudio, wayland, network, network-bind, home, locale-control, desktop, desktop-legacy]
+       plugs: [x11, unity7, gsettings, pulseaudio, wayland, network, network-bind, home, desktop, desktop-legacy]
 parts:
      helloworld-gui: 
         plugin: qmake
