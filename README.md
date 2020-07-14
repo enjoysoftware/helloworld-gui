@@ -3,28 +3,30 @@
 ![Redistribution-Free](https://img.shields.io/badge/Redistribution-Free-brightgreen)
 [![Build Status](https://travis-ci.com/enjoysoftware/helloworld-gui.svg?branch=master)](https://travis-ci.com/enjoysoftware/helloworld-gui)
 
-Cross-platform GUI version of Hello World .
+Cross-platform GUI version of Hello World. This is useful for checking the operation of the GUI.
+## Demo
+![HelloWorld GUI Demo Gif](demo.gif)
 ## Snapcraft Status
 [![Snap Status](https://build.snapcraft.io/badge/enjoysoftware/helloworld-gui.svg)](https://build.snapcraft.io/user/enjoysoftware/helloworld-gui)
-## How to install
+## Installation
 Please install using Snapcraft.
 
 [![Get it from the Snap Store](https://snapcraft.io/static/images/badges/en/snap-store-black.svg)](https://snapcraft.io/helloworld-gui)
 ```
 sudo snap install helloworld-gui
 ```
-## How to build
+## Building
 ### Requirements
 
-Qt5(`qtbase5-dev`)
-
+Qt5(Ubuntu Package: `qtbase5-dev, qt5-default`)  
+QtTools5 Development Tools(Ubuntu Package: qttools5-dev-tools
+### How to build
 First, execute the following command:
 ```bash
-cd app && lrelease app.pro && qmake
+qmake
 ```
 For Ubuntu and Debian, you can build by executing the "make" command as follows.
+
 ```bash
-make -j{n}
-or
 make
 ```
