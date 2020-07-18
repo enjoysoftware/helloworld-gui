@@ -18,8 +18,8 @@ sudo snap install helloworld-gui
 ## Building
 ### Requirements
 
-Qt5(Ubuntu Package: `qtbase5-dev, qt5-default`)  
-QtTools5 Development Tools(Ubuntu Package: qttools5-dev-tools
+Qt5(Ubuntu Package: `qtbase5-dev`, `qt5-default`)  
+QtTools5 Development Tools(Ubuntu Package: `qttools5-dev-tools`)
 ### How to build
 First, execute the following command:
 ```bash
