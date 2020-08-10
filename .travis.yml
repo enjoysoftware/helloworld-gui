@@ -1,20 +1,19 @@
 language: cpp
 os: linux
 dist: bionic
-jobs:
-- arch: amd64
-  env: ARCH_SUB="x86_64"
+arch:
+- amd64
 install:
 - sudo apt update
-- sudo apt install qt5-default qttools5-dev-tools libgl1-mesa-dev git wget -y 
+- sudo apt install qt5-default qttools5-dev-tools -y 
 script:
-- qmake && make 
-- bash scripts/packaging.sh
+- qmake
+- make
 deploy:
   provider: releases
   api_key:
-    secure: "gBxw8hWb+Gin5no5RFBgNzscERXX0sX2WoJwjwqjv9c6HRevicxb6jYGRLSP6/7EkBzXNCzv9rZqGahpuwmgLgs8v8bDxhl6LoRoCbVW9gVumvkBe5rgrRVLNTjIiafnf22o2j2lndRdvwy8YYK51vmy3nQJtBSIN+Y09bVj8fCJElN2N/   C3tKgq7IhbSzFubCxVwEQyhhUy8TmxtfUTIvmJxiELT7111/+cNQY/kLvpZgME8HWLcewrWQt5NwW/K8HGcL2nl+gBnHplxHCROvUVGB21l7qBfKw3UqgE9grXde+8N29B+wkZpG0scO+Xl0+2mUwp3QAoEhsd4i7NQmp0uBzc+k3flGcRMEUK8PyjdEyHCbTn5gm2FolvMvV+lKNZcb2zpLMTYqgNoP/MWKVSwueRKZO2sB05Oj4c/vbORWkbtmb9xY49Az8FH44qTajECmfaDPftpp08ngdWJLS66cM4k9wxXjuuZF4/fqBoPmjG1WwyKt/cxiujB8jLT8QGy4CNV8/hmP5cSH2ZdDSdV+wTbWaLqqy3r+F42/3RkcJCNuawNu9p9ZXb/Bm4UhLcqmzpIRPDgopHjJ5d4UoIABV1X0fd9OA2mB02c6ISIgUlUQ8gTjNwjlHVTcERc/j0cLVHgnnFwdgbb2P2cKIrACPGq3NjHWtQPQ+reQQ="
-  file: helloworld-gui-${TRAVIS_TAG}_${TRAVIS_CPU_ARCH}.tar.gz
+    secure: CyJLwzdNj+tj1dvOWVHn0xm3Yk/ogGly5s8GmQFnH5XXTDx4794g2JecNj3aytN4uzv6dqGlvoUZC1+MYrqzC4NTzbAHfRinMAi4Hmz7X/PTruXEZhz6sMWc4fbYDzrFsYQvxiv5296No2GS/CYM9m8JAlZQIxqaEOAkbQUubskYU+H7gVJGnBpXckaywmhheQfswWTkunBUm1kW5ErbyvGamZmfwM9LOQJt3NtlIgTy/kNReZySRheL4JIl70ZVQv3/WPb7DM+yynOd6pQowfppIHryFLjGXkZpXGgSvTSRhXCH8fy4o4Dn+AUYYVjv7Yy1GPHDG51CmF6kl0rdBg9DZK7BA/D0gLYrGj9NdOTFtoz2P9nEi8NYrr5T6hciH0W4DwcLpbg5Q0vGE/SiAcnXiM2JBJl2DKKs9ltCXZIitKr861CZ35FDBO1t+/y9K8/cNeYhvYrGwnZBz3Ch2cYo/KivTXBtWwbrkHAGJ8GKp9oUbNCJzIJBTBPukBdt4/RfigzFmiQf1iZPmY5zKblMgT5HvXXF5nA6rfC4TMgQ0aOBgx/8nbvw51RI65+PG4aZkqriZa/Jfg+Hqwn2+FcFas8woSSPzqBR85qYAyW46yHInBAXT/mIFNa71lizCxAib72nZTYJucMlNRmPvbBg3cWPz7utREBFe5lgjWo=
+  file: helloworld-gui.pro
   on:
     repo: enjoysoftware/helloworld-gui
     tags: true
