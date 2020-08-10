@@ -4,9 +4,6 @@ dist: bionic
 jobs:
 - arch: amd64
   env: ARCH_SUB="x86_64"
-- arch: ppc64le
-- arch: arm64
-- arch: s390x
 install:
 - sudo apt update
 - sudo apt install qt5-default qttools5-dev-tools libgl1-mesa-dev git wget -y 
