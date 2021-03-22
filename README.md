@@ -6,8 +6,7 @@
 Cross-platform GUI version of Hello World. This is useful for checking the operation of the GUI.
 ## Demo
 ![HelloWorld GUI Demo Gif](demo.gif)
-## Snapcraft Status
-[![Snap Status](https://build.snapcraft.io/badge/enjoysoftware/helloworld-gui.svg)](https://build.snapcraft.io/user/enjoysoftware/helloworld-gui)
+
 ## Installation
 Please install using Snapcraft.
 
